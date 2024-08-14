@@ -11,7 +11,7 @@ void packet_handler_online(u_char *, const struct pcap_pkthdr *, const u_char *)
 void packet_handler_offline(const char *);
 void print_payload(const unsigned char *, unsigned int);
 void print_payload_as_string(const unsigned char *, unsigned int);
-void process_packet(const char *, HashTable *);
+void print_hash_table(const HashTable *);
 char *create_str(const char[INET_ADDRSTRLEN], const char[INET_ADDRSTRLEN], unsigned int, unsigned int);
 unsigned int flow_hash(const char *);
 
